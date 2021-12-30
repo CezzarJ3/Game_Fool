@@ -6,15 +6,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ru.vsu.cs.bogdanova.game_fool.GameWindowHandler">
-    <Label fx:id="firstPlayerName" layoutX="14.0" layoutY="23.0" text="Первый игрок"/>
-    <HBox fx:id="firstPlayerCardsBox" layoutX="116.0" layoutY="12.0"/>
-    <HBox fx:id="topCardsZone" layoutX="16.0" layoutY="80.0"/>
-    <HBox fx:id="bottomCardsZone" layoutX="16.0" layoutY="189.0"/>
-    <Label fx:id="secondPlayerName" layoutX="14.0" layoutY="290.0" text="Второй игрок"/>
-    <HBox fx:id="secondPlayerCardsBox" layoutX="116.0" layoutY="280.0"/>
-    <HBox fx:id="trumpZone" layoutX="550.0" layoutY="150.0"/>
+<AnchorPane style="-fx-background: #3F8346;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.vsu.cs.bogdanova.game_fool.GameWindowHandler" onMouseClicked="#mouseClickedHandler">
+    <Label fx:id="firstPlayerName" layoutX="20.0" layoutY="68.0" prefWidth="100.0" prefHeight="20.0" text="Первый игрок"/> <!-- + -->
+    <HBox fx:id="firstPlayerCardsBox" layoutX="140.0" layoutY="20.0" style="-fx-padding: 10 10 10 10;"/>  <!-- + -->
+    <HBox fx:id="topCardsZone" layoutX="140.0" layoutY="136.0"/> <!-- + -->
+    <Label layoutX="20.0" layoutY="184.0" prefWidth="100.0" prefHeight="20.0" text="Козырь"/>
+    <HBox fx:id="trumpZone" layoutX="14.5" layoutY="214.0"/>
+    <Label fx:id="cardsInDeckLeft" layoutX="20.0" layoutY="320.0" prefWidth="100.0" prefHeight="20.0" text="Карт в колоде"/>
+    <HBox fx:id="bottomCardsZone" layoutX="140.0" layoutY="242.0"/>
+    <Label fx:id="secondPlayerName" layoutX="20.0" layoutY="406.0" prefWidth="100.0" prefHeight="20.0" text="Второй игрок"/>
+    <HBox fx:id="secondPlayerCardsBox" layoutX="140.0" layoutY="358.0"/>
     <!--    <TextField fx:id="chooseCardField" layoutY="300.0"/>-->
-    <Button layoutY="350.0" onMouseClicked="#startGameButtonHandler" text="Начать игру"/>
+    <Button fx:id="buttonStart" layoutX="20.0" layoutY="474.0" prefHeight="30.0" onMouseClicked="#startGameButtonHandler" text="Начать игру"
+            style="-fx-background-color: #98C8C0;"/>
 </AnchorPane>

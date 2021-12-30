@@ -264,5 +264,9 @@ public class Game {
     public Deck getDefenseZone() {
         return defenseZone;
     }
+
+    public int getCardsInDeckLeft() {
+        return deck.size();
+    }
 }
 

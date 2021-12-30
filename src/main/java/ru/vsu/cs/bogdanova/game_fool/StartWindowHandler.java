@@ -39,7 +39,7 @@ public class StartWindowHandler {
         GameWindowHandler gameWindowHandler = nextSceneLoader.getController();
 
         gameWindowHandler.startGame(firstPlayerName.getText(), secondPlayerName.getText());
-        Scene scene = new Scene(gameRoot, 700, 470);
+        Scene scene = new Scene(gameRoot, 708, 524);
         stage.setScene(scene);
         stage.show();
     }
